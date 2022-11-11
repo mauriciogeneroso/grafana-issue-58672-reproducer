@@ -6,13 +6,13 @@ This repo is used to reproduce the Bug reported on Grafana under the [Issue 5867
 
 ## How to run
 
-It is only required `docker` installed, then use the command bellow to run the script:
+It is only required `docker` installed, then use the command bellow to run the script to start the containers:
 
 ```shell
 ./start.sh
 ```
 
-It will start two container:
+It will start two containers:
 - One container for Grafana
 - One container as an API server to provide data to the Graph
 
