@@ -1,0 +1,93 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "hamedkarbasi93-nodegraphapi-datasource",
+        "uid": "P30CC146E954DC3C7"
+      },
+      "gridPos": {
+        "h": 25,
+        "w": 20,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "targets": [
+        {
+          "datasource": {
+            "type": "hamedkarbasi93-nodegraphapi-datasource",
+            "uid": "P30CC146E954DC3C7"
+          },
+          "queryText": "query=$producer",
+          "refId": "A"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "nodeGraph"
+    }
+  ],
+  "schemaVersion": 37,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": false,
+          "text": "producer1",
+          "value": "producer1"
+        },
+        "hide": 0,
+        "label": "Producer",
+        "name": "producer",
+        "options": [
+          {
+            "selected": true,
+            "text": "producer1",
+            "value": "producer1"
+          }
+        ],
+        "query": "producer1",
+        "skipUrlSync": false,
+        "type": "textbox"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Dashboard",
+  "uid": "iAK-EJe7z",
+  "version": 1,
+  "weekStart": ""
+}

@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  node-graph-server:
+    build: ./server/
+    container_name: node-graph-server
+    restart: always
+    ports:
+      - "3003:3003"
+
+  grafana:
+    build: ./grafana
+    container_name: grafana
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=hamedkarbasi93-nodegraphapi-datasource
+      - SERVER_URL=http://node-graph-server:3003
